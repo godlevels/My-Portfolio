@@ -30,7 +30,7 @@ const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
-    let itemClass = this.parentNode.ClassName
+    let itemClass = this.parentNode.className
 
     for(i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills__content skills__close'
@@ -69,7 +69,7 @@ modalCloses.forEach((modalClose) => {
 
 let swiper = new Swiper(".projects__container", {
     cssMode: true,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
